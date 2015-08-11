@@ -23,7 +23,8 @@
         "init-git": "[ ! -e '.git' ] && git init; echo 'initted';",
         "prereqs": "npm run bower; URL=https://raw.githubusercontent.com/t3patterson/ProjectBuild/master/; curl $URL/js/test/main.js --retry 5 > ./js/test/main.js; curl $URL/index.html --retry 5 > ./index.html; curl $URL/scss/style.scss --retry 5 > ./scss/style.scss; curl $URL/server.js --retry 5 > ./server.js; curl $URL/heroku-server.js --retry 5 > ./heroku-server.js; curl $URL/js/app-browserify.js --retry 5 > ./js/app-browserify.js;",
         "bower": "bower install normalize-css pace typeplate-starter-kit font-awesome --save;",
-        "ignores": "echo 'node_modules' > .gitignore;"
+        "ignores": "echo 'node_modules' > .gitignore;",
+        "update-gh-pages": "git checkout gh-pages || git checkout -b gh-pages; git merge master; git checkout master;"
     },
     "dependencies": {
         "es5-shim": "^4.1.4",
