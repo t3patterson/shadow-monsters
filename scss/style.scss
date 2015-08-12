@@ -3,11 +3,6 @@
 @import "../bower_components/typeplate-starter-kit/css/typeplate.css";
    
 
-$med-purple: #5050D4;
-$grey-purple: #69699C;
-$light-purple: #8F8FD4;
-$dark-purple: #16163B;  
-
 /**
  * BOX-SIZING
  */
@@ -104,7 +99,6 @@ $dark-purple: #16163B;
 
 body{
     font-family: "News Cycle", "Helvetica Neue", "Helvetica", sans-serif;
-    background: #338;
 }
 
 img {
@@ -116,25 +110,18 @@ p + p{
     margin-top: 0;
 }
 
-span.circle-bullet{}
+span.circle-bullet{
+    font-size: 
+}
 
 /**
  * YOUR CODE HERE
  */
-
-.overlay{
-    display: none;
-}
 .wrapper{
     max-width: 600px;
     margin: 0 auto;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
     padding-left: 2rem;
-    background: #fff;
 }
-
-
 
 hr {
     height: 13px;
@@ -143,32 +130,7 @@ hr {
     border: none;
 }
 
-h1 {
-    font-size: 2rem;
-}
 h2 {
-    font-size: 1.33333rem;
     font-weight: 400;
 }
-
-a {
-    color: $grey-purple;
-}
-
-a:hover{
-    color: #696969
-}
-
-.event-img-container{
-    width: 220px;
-}
-
-.social-icon{
-    display:inline-block;
-    vertical-align: center;
-    height: 18px;
-    padding-right: 2px
-}
-
-
 
